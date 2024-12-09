@@ -1,0 +1,5 @@
+find_library(simpleamqpclient_LIBRARIES NAMES SimpleAmqpClient PATHS "${@PROJECT_NAME@_DIR}/../../../opt/simpleamqpclient_vendor/lib")
+set(simpleamqpclient_vendor_LIBRARIES ${simpleamqpclient_LIBRARIES})
+set(simpleamqpclient_vendor_INCLUDE_DIRS 
+  "${@PROJECT_NAME@_DIR}/../../../opt/simpleamqpclient_vendor/include"
+)
