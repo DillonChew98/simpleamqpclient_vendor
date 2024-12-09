@@ -1,0 +1,2 @@
+# simpleamqpclient_vendor
+vendor_package for SimpleAmqpClient
