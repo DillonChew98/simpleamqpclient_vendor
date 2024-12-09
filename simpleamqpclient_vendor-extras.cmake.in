@@ -1,6 +1,5 @@
-if(WIN32)
-  set(simpleamqpclient_DIR "${@PROJECT_NAME@_DIR}/../../../opt/simpleamqpclient_vendor/CMake")
-else()
-  set(simpleamqpclient_DIR "${@PROJECT_NAME@_DIR}/../../../opt/simpleamqpclient_vendor/share/cmake/simpleamqpclient")
-endif()
-message(WARNING "Setting simpleamqpclient_DIR to: '${simpleamqpclient_DIR}'")
+find_library(simpleamqpclient_LIBRARIES NAMES SimpleAmqpClient PATHS "${@PROJECT_NAME@_DIR}/../../../opt/simpleamqpclient_vendor/lib")
+set(simpleamqpclient_vendor_LIBRARIES ${simpleamqpclient_LIBRARIES})
+set(simpleamqpclient_vendor_INCLUDE_DIRS 
+  "${@PROJECT_NAME@_DIR}/../../../opt/simpleamqpclient_vendor/include"
+)
