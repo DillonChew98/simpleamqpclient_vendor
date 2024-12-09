@@ -10,6 +10,7 @@ find_package(ament_cmake_vendor_package REQUIRED)
 ament_vendor(simpleamqpclient_vendor
   SATISFIED ${simpleamqpclient_FOUND}
   VCS_URL https://github.com/alanxz/SimpleAmqpClient.git
+  VCS_VERSION v2.5.1
   GLOBAL_HOOK
 )
 ament_package(
