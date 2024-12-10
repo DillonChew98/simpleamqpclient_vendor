@@ -2,15 +2,17 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>simpleamqpclient_vendor</name>
-  <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <version>2.5.1</version>
+  <description>
+  Wrapper around SimpleAmqpClient
+  </description>
   <maintainer email="dillonczy@hotmail.com">sheikspeare</maintainer>
-  <license>TODO: License declaration</license>
-
+  
+  <license>Apache License 2.0</license>  <!-- the contents of this package are Apache 2.0 -->
+  <license>MIT</license>
+  
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_vendor_package</buildtool_depend>
-  <test_depend>ament_lint_auto</test_depend>
-  <test_depend>ament_lint_common</test_depend>
 
   <depend>rabbitmq-c_vendor</depend>
   
