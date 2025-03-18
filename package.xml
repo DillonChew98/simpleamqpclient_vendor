@@ -13,7 +13,11 @@
   
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_vendor_package</buildtool_depend>
+  <build_depend>libboost-chrono-dev</build_depend>
+  <build_depend>libboost-system-dev</build_depend>
 
+  <depend>libboost-chrono</depend>
+  <depend>libboost-system</depend>
   <depend>rabbitmq-c_vendor</depend>
   
   <export>
